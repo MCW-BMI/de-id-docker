@@ -1,0 +1,19 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    volumes:
+       - ./pgdata:/var/lib/postgresql/data
+    ports:
+        - "5432:5432"
+    environment:
+        POSTGRES_PASSWORD: ctsi4you
+        POSTGRES_USER: postgres
+
+  app:
+    build: .
+    volumes:
+      - ./deid:/root/deid
+    command: /bin/bash -c /root/deid/runDeID_Docker.sh
+    depends_on:
+       - db
