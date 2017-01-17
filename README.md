@@ -32,6 +32,12 @@ brew install git
 
 ## Setup
 
+First download the Linux JDK jdk-8u111-linux-i586.tar.gz at the time of this writing and put it into the archive directory . 
+
+From : http://www.oracle.com/technetwork/java/javase/downloads/index.html 
+If a differennt version is present then one will need to update the install_java.sh script to reference that one. 
+
+
 No matter if one is running a standalone or Local database one needs to first pull down the
 git repo of deid software .  This is done with by running :
 

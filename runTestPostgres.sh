@@ -7,4 +7,4 @@
 
 # Update with the IP address your Postgres Server is running on before running . 
 # 
-docker run --net=host --add-host=mytestserver:141.106.79.132  -it -v /Users/gkowalski/docker/deid-docker/deid:/root/deid  deid /bin/bash -c /root/deid/postgresTest.sh
+docker run --net=host --add-host=mytestserver:10.32.17.195  -it -v /Users/gkowalski/docker/deid-docker/deid:/root/deid  deid /bin/bash -c /root/deid/postgresTest.sh
